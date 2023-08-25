@@ -69,8 +69,8 @@ organized per category and filters can be used to sort them.
 Documents management
 ====================
 
-When clicking on a specific document, the right panel displays different options. On the top,
-additional options might be available: :guilabel:`Download`, :guilabel:`Share`, :guilabel:`Replace`,
+When selecting a document, the right panel displays different options. On the top, additional
+options might be available: :guilabel:`Download`, :guilabel:`Share`, :guilabel:`Replace`,
 :guilabel:`Lock` or :guilabel:`Split`. It is also possible to :guilabel:`Open chatter` or
 :guilabel:`Archive` the document.
 
@@ -91,8 +91,81 @@ be modified and it is possible to access the related :guilabel:`Journal Entry` o
      rights to the document. It is possible to replace the owner of a document. I.e.: an employee
      must be owner of a document to be able to see it in "My Profile".
 
-Finally, different :guilabel:`Actions` are available at the bottom of the right panel, depending on
-the workspace where your document is stored.
+Finally, different :ref:`Actions <documents/workflow-actions>` are available at the bottom of the
+right panel, depending on the workspace where your document is stored.
+
+Split documents
+---------------
+
+Select the document you want to split, and click the :guilabel:`Split` icon. A new page opens and
+displays all the pages of the document.
+
+The scissors between pages indicate where the split will occur. Click on the scissors if you
+don't want to split your document between two specific pages.
+
+.. image:: documents/split-pdf.png
+   :align: center
+   :alt: split your documents
+
+.. note::
+
+   To merge documents, select them from your dashboard and click the :guilabel:`Split` icon. Then,
+   click on the scissors between pages to remove the cut, and click :guilabel:`Split`. Your
+   documents are now merged.
+
+Additional features
+-------------------
+
+Select a specific workspace and click on the arrow next to the :guilabel:`Upload` button to access
+additional features:
+
+Request
+~~~~~~~
+
+To request a missing file, click :guilabel:`Request`. Add the :guilabel:`Document name`, select the
+person you need it from in the :guilabel:`Request to` field, fill in the :guilabel:`Due date`, add
+the :guilabel:`Workspace` the document should belong to, and eventually add :guilabel:`Tags` and a
+:guilabel:`Note`. A file reflecting the missing document is created in the workspace.
+
+To see all the documents you requested, go to the :guilabel:`Activity` view and to the
+:guilabel:`Requested Document` column.
+
+.. Note::
+
+   To send a **reminder email** to all users you are waiting a document from, click on ⋮, and
+   :guilabel:`Document Request: Reminder`.
+
+   Click on a date to see the details of a specific request. You can update it by clicking on the
+   pen icon, :guilabel:`Preview` the content of the reminder email, or :guilabel:`Send Now` to send
+   a reminder email.
+
+   .. image:: documents/reminder-email.png
+      :align: center
+      :alt: send a reminder email from the Activity view
+
+Add a link
+~~~~~~~~~~
+
+To add a url to your documents dashboard, click on :guilabel:`Add a link`, enter the :guilabel:`URL`
+and :guilabel:`Name` it. A file reflecting the url is created.
+
+Share
+~~~~~
+
+Click :guilabel:`Share` to share the content of your workspace. A :guilabel:`URL` is available; you
+can :guilabel:`copy` it to share it with the users you want so they can directly access your
+document workspace and its content. Tick the :guilabel:`Include Sub Folders` box if you also want
+to share subfolders. :guilabel:`Name` the share link and set a validity date for the url by filling
+the :guilabel:`Valid Until` field. You can also enable users to :guilabel:`Download` or
+:guilabel:`Download and Upload` documents.
+
+New spreadsheet
+~~~~~~~~~~~~~~~
+
+To create a new spreadsheet, click :guilabel:`New Spreadsheet`. You can select a
+:guilabel:`Blank spreadsheet` or an existing one.
+
+.. _documents/workflow-actions:
 
 Workflow actions
 ================
@@ -178,10 +251,12 @@ Select the :guilabel:`Actions` tab to set up your action. You can simultaneously
 - **Move to Workspace**: move the file to any workspace.
 - **Create**: create one of the following items attached to the file in your database:
 
+   - **Link to record**: ??
    - **Product template**: create a product you can edit directly.
    - **Task**: create a Project task you can edit directly.
-   - **Signature request**: create a new Sign template to send out.
-   - **Sign directly**: create a Sign template to sign directly.
+   - **Signature PDF template**: create a new Sign template to send out.
+   - **PDF to sign**: ??
+   - **Applicant**: create a new HR application you can edit directly.
    - **Vendor bill**: create a vendor bill using OCR and AI to scrape information from the file
      content.
    - **Customer invoice**: create a customer invoice using OCR and AI to scrape information from
@@ -190,7 +265,9 @@ Select the :guilabel:`Actions` tab to set up your action. You can simultaneously
      from the file.
    - **Credit note**: create a customer credit note using OCR and AI to scrape information from
      the file.
-   - **Applicant**: create a new HR application you can edit directly.
+   - **Miscellaneous Operations**: ??
+   - **Bank Statement**: ??
+   - **Expense**: create an expense automatically based on a file's content.
 
 - **Set Tags**: add, remove, and replace any number of tags.
 - **Activities - Mark all as Done**: mark all activities linked to the file as done.
