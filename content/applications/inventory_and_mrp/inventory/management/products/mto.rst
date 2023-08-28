@@ -2,7 +2,7 @@
 Replenish on order (MTO)
 ========================
 
-.. |MTO| replace:: :abbr:`MTO (make to order)`
+.. |MTO| replace:: :abbr:`Make To Order (make to order)`
 .. |RFQ| replace:: :abbr:`RFQ (request for quotation)`
 .. |BOM| replace:: :abbr:`BOM (bill of materials)`
 
